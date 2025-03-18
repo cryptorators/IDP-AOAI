@@ -41,7 +41,7 @@ try {
     validateCredentials();
     client = DocumentIntelligence(endpoint, { 
         key: apiKey,
-        apiVersion: "2023-10-31-preview"  // Adding explicit API version
+        apiVersion: "2024-11-30"  // Adding explicit API version
     });
     console.log('Document Intelligence Client initialized successfully');
 } catch (error) {
