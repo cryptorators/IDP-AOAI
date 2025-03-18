@@ -4,6 +4,9 @@
 
 This project is a simple yet modern Node.js web application that allows users to upload two files, process them using Azure Document Intelligence for OCR, and compare the documents using Azure OpenAI's GPT-4 model. The application also features a chat interface for user inquiries regarding the uploaded documents.
 
+![image](https://github.com/user-attachments/assets/06556fd1-c06e-4df9-9e5d-bb493add41b4)
+
+
 ## Project Structure
 
 ```
