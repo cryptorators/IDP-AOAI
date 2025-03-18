@@ -1,0 +1,23 @@
+{
+  "name": "document-compare-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js web application for comparing documents using Azure Document Intelligence and OpenAI.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "debug": "DEBUG=dotenv node src/server.js",
+    "validate-env": "node -e \"require('./src/utils/env-validator').validateEnvFile(require('path').resolve(__dirname))\"",
+    "test-env": "cross-env DEBUG=dotenv npm start"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "@azure-rest/ai-document-intelligence": "1.0.0-beta.1",
+    "@azure/openai": "",
+    "dotenv": "^16.0.3",
+    "cross-env": "^7.0.3",
+    "axios": "^1.6.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

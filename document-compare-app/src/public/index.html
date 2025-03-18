@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Compare App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Document Compare App</h1>
+    </header>
+
+    <div class="container">
+        <section class="upload-section">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="file-input-group">
+                    <div class="file-input-container">
+                        <label class="file-input-label" for="file1">First Document</label>
+                        <input type="file" id="file1" name="file1" required>
+                    </div>
+                    <div class="file-input-container">
+                        <label class="file-input-label" for="file2">Second Document</label>
+                        <input type="file" id="file2" name="file2" required>
+                    </div>
+                </div>
+                <button type="submit">Compare Documents</button>
+            </form>
+        </section>
+
+        <section class="document-viewer">
+            <div class="document-container">
+                <h3>Document 1</h3>
+                <div id="document1Content"></div>
+            </div>
+            <div class="document-container">
+                <h3>Document 2</h3>
+                <div id="document2Content"></div>
+            </div>
+        </section>
+
+        <section id="comparisonResult"></section>
+
+        <section id="chatInterface" class="chat-interface">
+            <h2>Ask Questions About the Documents</h2>
+            <textarea id="chatInput" placeholder="Ask your questions about the documents here..."></textarea>
+            <button id="sendChat">Send Question</button>
+            <div id="chatResponse"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
